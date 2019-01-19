@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margin_xxxsmall">1dp</dimen>
+    <dimen name="margin_xxsmall">2dp</dimen>
+    <dimen name="margin_xsmall">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_slarge">20dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+    <dimen name="margin_xslarge">28dp</dimen>
+    <dimen name="margin_xxlarge">32dp</dimen>
+    <dimen name="margin_xxxlarge">48dp</dimen>
+    <dimen name="margin_xivlarge">64dp</dimen>
+    <dimen name="margin_xvlarge">96dp</dimen>
+
+    <!-- Fonts -->
+    <dimen name="font_xxxsmall">9sp</dimen>
+    <dimen name="font_xxsmall">10sp</dimen>
+    <dimen name="font_xsmall">11sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_small_x">13sp</dimen>
+    <dimen name="font_xxnormal">14sp</dimen>
+    <dimen name="font_xnormal">16sp</dimen>
+    <dimen name="font_normal">18sp</dimen>
+    <dimen name="font_normal_x">20sp</dimen>
+    <dimen name="font_normal_xx">22sp</dimen>
+    <dimen name="font_large">24sp</dimen>
+    <dimen name="font_large_x">32sp</dimen>
+    <dimen name="font_large_xx">46sp</dimen>
+
+    <dimen name="status_bar_height">24dp</dimen>
+
+</resources>

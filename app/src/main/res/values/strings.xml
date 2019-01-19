@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BaseArchitecture</string>
+    //Base Strings
+    <string name="unknown_error">Unknown Error</string>
+    <string name="no_internet_error">There is currently no internet connection. Please try again later.</string>
+    <string name="time_out_exception">Socket Time out. Please try again.</string>
+    <string name="never_ask_for_write_permission_rationale">We notice that you set \'Never ask again\' for some write/read permission.
+        Without this permission we can\'t load your image from phone. Please, go to the settings and activate it</string>
+    <string name="allow_button">Allow</string>
+    <string name="i_dont_want_button">I don\'t want</string>
+
+
+
+    <!--Loading view-->
+    <string name="loading_view_loading">Loading…</string>
+    <string name="loading_view_failed">Failed to load items</string>
+    <string name="loading_view_retry">Retry</string>
+
+</resources>

@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.devnock.basearchitecture"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        dataBinding.enabled = true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"URL\""
+//            signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            buildConfigField "String", "BASE_URL", "\"URL\""
+//            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Life data
+    implementation 'com.annimon:stream:1.1.9'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'android.arch.lifecycle:viewmodel:1.1.1'
+    implementation 'android.arch.lifecycle:livedata:1.1.1'
+    implementation 'android.arch.paging:runtime:1.0.1'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    //Crashlytics
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+        transitive = true;
+    }
+
+    implementation 'joda-time:joda-time:2.10.1'
+
+//    Support libs
+    implementation 'com.android.support:support-v13:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+}
