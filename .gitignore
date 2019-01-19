@@ -1,9 +1,18 @@
 *.iml
 .gradle
 /local.properties
-/.idea/libraries
-/.idea/modules.xml
+
+# Idea non-crucial project fileS
+*.idea
+*.iws
+*.iml
+.idea
+.idea/*.*
+.idea/*.xml
+/.idea
 /.idea/workspace.xml
+/.idea/libraries
+
 .DS_Store
 /build
 /captures
